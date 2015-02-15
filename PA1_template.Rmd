@@ -85,7 +85,8 @@ na_count
 
 - Number of records with NA values is **2304**
 
-- Create a new dataset that will have filled NA, loop through records and fill in the NA
+- The strategy will be applied is to fill in any NA value with the mean count of steps vlaue of the same interval calculated before
+- Create a new dataset that will have filled NA, loop through records and fill in the NA with mean value
 ```{r}
 activity_filled <- activity  
 for (i in 1:nrow(activity_filled)) {

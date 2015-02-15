@@ -131,7 +131,8 @@ na_count</code></pre>
 <pre><code>## [1] 2304</code></pre>
 <ul>
 <li><p>Number of records with NA values is <strong>2304</strong></p></li>
-<li><p>Create a new dataset that will have filled NA, loop through records and fill in the NA</p></li>
+<li>The strategy will be applied is to fill in any NA value with the mean count of steps vlaue of the same interval calculated before</li>
+<li><p>Create a new dataset that will have filled NA, loop through records and fill in the NA with mean value</p></li>
 </ul>
 <pre class="r"><code>activity_filled &lt;- activity  
 for (i in 1:nrow(activity_filled)) {
